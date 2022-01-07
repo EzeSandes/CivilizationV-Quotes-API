@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 /********************************* ROUTES ******************************** */
 /************************************************************************** */
 
-app.use("/api/v1/", allQuotesRoutes);
 app.use("/api/v1/technologies", techRoutes);
+app.use("/api/v1/", allQuotesRoutes);
 
 module.exports = app;

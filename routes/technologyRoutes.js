@@ -3,7 +3,19 @@ const techController = require("../controllers/technologyController");
 
 const router = express.Router();
 
-router.route("/").get(techController.getAllTechQuotes);
-router.route("/:id").get(techController.getTechQuote);
+/// MIDDLEWARES
+router.use(techController.searchTechQuotes);
+///
+
+router
+  .route("/")
+  .get(techController.getAllTechQuotes)
+  .post(techController.createTechQuote);
+
+router
+  .route("/:id")
+  .get(techController.getTechQuote)
+  .delete(techController.deleteTechQuote)
+  .patch(techController.updateTechQuote);
 
 module.exports = router;
