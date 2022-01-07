@@ -4,13 +4,14 @@
   "description": "Quotes from Sid Meier's Civilization V game",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon server.js"
   },
   "author": "José Ezequiel Sandes",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mongoose": "^5.10.19"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

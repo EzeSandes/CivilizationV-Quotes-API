@@ -1,18 +1,12 @@
 const express = require("express");
-const dotenv = require("dotenv");
-const data = require("./dev-data/data/civ5Quotes-simple");
-
+const techRoutes = require("./routes/technologyRoutes");
+const allQuotesRoutes = require("./routes/allQuotesRoutes");
 const app = express();
 
-/*********************************  CONSTANTS ***************************** */
+/*********************************  ***************************** */
 /************************************************************************** */
 
-dotenv.config({ path: "./config.env" });
-
-// Converted to an Array of Objects
-const quotesData = JSON.parse(JSON.stringify(data));
-
-/*********************************  MIDDLEWARES ***************************** */
+/********************************* MIDDLEWARES ***************************** */
 /************************************************************************** */
 app.use(express.json());
 
@@ -21,49 +15,10 @@ app.use((req, res, next) => {
   next();
 });
 
-/*********************************  ROUTES ******************************** */
-/************************************************************************** */
-app.get("/api/v1/", (req, res) => {
-  res.status(200).json({
-    status: "success",
-    data: {
-      quotes: quotesData,
-    },
-  });
-});
-
-app.get("/api/v1/technologies", (req, res) => {
-  const quotes = quotesData.filter((el) => el.type.category === "Technology");
-
-  console.log(`Requested time: ${Date.now() - req.reqTime}`);
-
-  res.status(200).json({
-    status: "success",
-    results: quotes.length,
-    data: {
-      quotes,
-    },
-  });
-});
-
-app.get("/api/v1/technologies/:id", (req, res) => {
-  const id = +req.params.id; // || Number(...)
-
-  const quote = quotesData.find((el) => el.id === id);
-
-  if (quote)
-    res.status(200).json({
-      status: "success",
-      data: {
-        quote,
-      },
-    });
-  else res.status(404).end();
-});
-
-/*********************************  SERVER ******************************** */
+/********************************* ROUTES ******************************** */
 /************************************************************************** */
 
-app.listen(process.env.PORT, () => {
-  console.log(`App running on port ${PORT}`);
-});
+app.use("/api/v1/", allQuotesRoutes);
+app.use("/api/v1/technologies", techRoutes);
+
+module.exports = app;
