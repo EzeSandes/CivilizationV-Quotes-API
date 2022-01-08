@@ -23,6 +23,8 @@ exports.getQuote = async (req, res) => {
   try {
     const quote = await Quote.findById(req.params.id);
 
+    if (!quote) throw new Error("Please, provide a valid ID");
+
     res.status(200).json({
       status: "success",
       data: {
@@ -32,7 +34,7 @@ exports.getQuote = async (req, res) => {
   } catch (err) {
     res.status(404).json({
       status: "fail",
-      message: err,
+      message: err.message,
     });
   }
 };
@@ -62,6 +64,8 @@ exports.updateQuote = async (req, res) => {
       runValidators: true,
     });
 
+    if (!quote) throw new Error("Please, provide a valid ID");
+
     res.status(200).json({
       status: "success",
       data: {
@@ -71,14 +75,16 @@ exports.updateQuote = async (req, res) => {
   } catch (err) {
     res.status(404).json({
       status: "fail",
-      message: `Quote not found: ${err}`,
+      message: err.message,
     });
   }
 };
 
 exports.deleteQuote = async (req, res) => {
   try {
-    await Quote.findByIdAndDelete(req.params.id);
+    const doc = await Quote.findByIdAndDelete(req.params.id);
+
+    if (!doc) throw new Error("Please, provide a valid ID");
 
     res.status(204).json({
       status: "success",
@@ -87,7 +93,7 @@ exports.deleteQuote = async (req, res) => {
   } catch (err) {
     res.status(404).json({
       status: "fail",
-      message: `Quote not found: ${err}`,
+      message: err.message,
     });
   }
 };

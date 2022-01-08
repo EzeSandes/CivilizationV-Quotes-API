@@ -17,7 +17,6 @@ exports.getAllTechQuotes = async (req, res) => {
       },
     });
   } catch (err) {
-    console.log(`⛔ERROR⛔`, err);
     res.status(404).json({
       status: "fail",
       message: err,
@@ -29,7 +28,7 @@ exports.getTechQuote = async (req, res) => {
   try {
     const techQuote = await Tech.findById(req.params.id);
 
-    if (techQuote.category.type !== req.categoryType)
+    if (!techQuote || techQuote.category.type !== req.categoryType)
       throw new Error("Please, provide an ID of a technology quote.");
 
     res.status(200).json({
@@ -39,7 +38,6 @@ exports.getTechQuote = async (req, res) => {
       },
     });
   } catch (err) {
-    console.log(`⛔ERROR⛔`, err);
     res.status(404).json({
       status: "fail",
       message: err.message,
@@ -49,7 +47,7 @@ exports.getTechQuote = async (req, res) => {
 
 exports.createTechQuote = async (req, res) => {
   try {
-    req.body.category.type = "technology";
+    req.body.category.type = req.categoryType;
     const newTechQuote = await Tech.create(req.body);
 
     res.status(201).json({
@@ -61,17 +59,17 @@ exports.createTechQuote = async (req, res) => {
   } catch (err) {
     res.status(404).json({
       status: "fail",
-      message: err,
+      message: err.message,
     });
   }
 };
 
 exports.updateTechQuote = async (req, res) => {
   try {
-    // // 1) I have to check if the ID provided belongs to a technology quote
+    // 1) I have to check if the ID provided belongs to a technology quote
     const techQuote = await Tech.findById(req.params.id, "category");
 
-    if (techQuote.category.type !== req.categoryType)
+    if (!techQuote || techQuote.category.type !== req.categoryType)
       throw new Error("Please, provide an ID of a technology quote.");
 
     // 2) If it is => update it and save it.
@@ -96,9 +94,14 @@ exports.updateTechQuote = async (req, res) => {
 
 exports.deleteTechQuote = async (req, res) => {
   try {
+    const quote = await Tech.findById(req.params.id, "category");
+
+    if (!quote || quote.category.type !== req.categoryType)
+      throw new Error("Please, provide an ID of a technology quote.");
+
     await Tech.findByIdAndDelete(req.params.id);
 
-    res.status(200).json({
+    res.status(204).json({
       status: "success",
       data: null,
     });
