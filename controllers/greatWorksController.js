@@ -1,21 +1,21 @@
-const Wonder = require("../models/quoteModel");
+const GreatWork = require("../models/quoteModel");
 
-exports.searchWonderQuotes = (req, res, next) => {
-  req.categoryType = "wonder";
+exports.searchGreatWorksQuotes = (req, res, next) => {
+  req.categoryType = "great work";
   next();
 };
 
-exports.getAllWonderQuotes = async (req, res) => {
+exports.getAllGreatWorksQuotes = async (req, res) => {
   try {
-    const wondersQuotes = await Wonder.find({
+    const greatWorksQuotes = await GreatWork.find({
       "category.type": req.categoryType,
     });
 
     res.status(200).json({
       status: "success",
-      results: wondersQuotes.length,
+      results: greatWorksQuotes.length,
       data: {
-        quotes: wondersQuotes,
+        quotes: greatWorksQuotes,
       },
     });
   } catch (err) {
@@ -26,17 +26,17 @@ exports.getAllWonderQuotes = async (req, res) => {
   }
 };
 
-exports.getWonderQuote = async (req, res) => {
+exports.getGreatWorkQuote = async (req, res) => {
   try {
-    const wonderQuote = await Wonder.findById(req.params.id);
+    const greatWorkQuote = await GreatWork.findById(req.params.id);
 
-    if (!wonderQuote || wonderQuote.category.type !== req.categoryType)
-      throw new Error("Please, provide an ID of a wonder quote.");
+    if (!greatWorkQuote || greatWorkQuote.category.type !== req.categoryType)
+      throw new Error("Please, provide an ID of a great work quote.");
 
     res.status(200).json({
       status: "success",
       data: {
-        quote: wonderQuote,
+        quote: greatWorkQuote,
       },
     });
   } catch (err) {
@@ -47,16 +47,16 @@ exports.getWonderQuote = async (req, res) => {
   }
 };
 
-exports.createWonderQuote = async (req, res) => {
+exports.createGreatWorkQuote = async (req, res) => {
   try {
     req.body.category.type = req.categoryType;
 
-    const newWonderQuote = await Wonder.create(req.body);
+    const newGreatWorkQuote = await GreatWork.create(req.body);
 
     res.status(201).json({
       status: "success",
       data: {
-        quote: newWonderQuote,
+        quote: newGreatWorkQuote,
       },
     });
   } catch (err) {
@@ -67,16 +67,16 @@ exports.createWonderQuote = async (req, res) => {
   }
 };
 
-exports.updateWonderQuote = async (req, res) => {
+exports.updateGreatWorkQuote = async (req, res) => {
   try {
     // 1) I have to check if the ID provided belongs to a technology quote
-    const wonderQuote = await Wonder.findById(req.params.id, "category");
+    const greatWorkQuote = await GreatWork.findById(req.params.id, "category");
 
-    if (!wonderQuote || wonderQuote.category.type !== req.categoryType)
-      throw new Error("Please, provide an ID of a wonder quote.");
+    if (!greatWorkQuote || greatWorkQuote.category.type !== req.categoryType)
+      throw new Error("Please, provide an ID of a great work quote.");
 
     // 2) If it is => update it and save it.
-    const quoteUpdated = await Wonder.findByIdAndUpdate(
+    const quoteUpdated = await GreatWork.findByIdAndUpdate(
       req.params.id,
       req.body,
       {
@@ -99,14 +99,14 @@ exports.updateWonderQuote = async (req, res) => {
   }
 };
 
-exports.deleteWonderQuote = async (req, res) => {
+exports.deleteGreatWorkQuote = async (req, res) => {
   try {
-    const quote = await Wonder.findById(req.params.id, "category");
+    const quote = await GreatWork.findById(req.params.id, "category");
 
     if (!quote || quote.category.type !== req.categoryType)
-      throw new Error("Please, provide an ID of a wonder quote.");
+      throw new Error("Please, provide an ID of a great work quote.");
 
-    await Wonder.findByIdAndDelete(req.params.id);
+    await GreatWork.findByIdAndDelete(req.params.id);
 
     res.status(204).json({
       status: "success",
