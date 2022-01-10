@@ -1,4 +1,5 @@
 const Quote = require("../models/quoteModel");
+// const AppError = require('../utils/appError');
 
 exports.getAllQuotes = async (req, res) => {
   try {
