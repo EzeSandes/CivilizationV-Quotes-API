@@ -1,100 +1,67 @@
 const Quote = require("../models/quoteModel");
-// const AppError = require('../utils/appError');
+const catchAsync = require("../utils/catchAsync");
+const AppError = require("../utils/appError");
 
-exports.getAllQuotes = async (req, res) => {
-  try {
-    const allQuotes = await Quote.find();
+exports.getAllQuotes = catchAsync(async (req, res, next) => {
+  const allQuotes = await Quote.find();
 
-    res.status(200).json({
-      status: "success",
-      results: allQuotes.length,
-      data: {
-        quotes: allQuotes,
-      },
-    });
-  } catch (err) {
-    res.status(404).json({
-      status: "fail",
-      message: err,
-    });
-  }
-};
+  res.status(200).json({
+    status: "success",
+    results: allQuotes.length,
+    data: {
+      quotes: allQuotes,
+    },
+  });
+});
 
-exports.getQuote = async (req, res) => {
-  try {
-    const quote = await Quote.findById(req.params.id);
+exports.getQuote = catchAsync(async (req, res, next) => {
+  const quote = await Quote.findById(req.params.id);
 
-    if (!quote) throw new Error("Please, provide a valid ID");
+  // I immediately call the global error handling middleware
+  if (!quote) return next(new AppError("Please, provide a valid ID", 404));
 
-    res.status(200).json({
-      status: "success",
-      data: {
-        quote,
-      },
-    });
-  } catch (err) {
-    res.status(404).json({
-      status: "fail",
-      message: err.message,
-    });
-  }
-};
+  res.status(200).json({
+    status: "success",
+    data: {
+      quote,
+    },
+  });
+});
 
-exports.createQuote = async (req, res) => {
-  try {
-    const newQuote = await Quote.create(req.body);
+exports.createQuote = catchAsync(async (req, res, next) => {
+  const newQuote = await Quote.create(req.body);
 
-    res.status(201).json({
-      status: "success",
-      data: {
-        quote: newQuote,
-      },
-    });
-  } catch (err) {
-    res.status(400).json({
-      status: "fail",
-      message: err.message,
-    });
-  }
-};
+  res.status(201).json({
+    status: "success",
+    data: {
+      quote: newQuote,
+    },
+  });
+});
 
-exports.updateQuote = async (req, res) => {
-  try {
-    const quote = await Quote.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
-    });
+exports.updateQuote = catchAsync(async (req, res, next) => {
+  const quote = await Quote.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
 
-    if (!quote) throw new Error("Please, provide a valid ID");
+  if (!quote) return next(new AppError("Please, provide a valid ID", 400));
 
-    res.status(200).json({
-      status: "success",
-      data: {
-        quote,
-      },
-    });
-  } catch (err) {
-    res.status(404).json({
-      status: "fail",
-      message: err.message,
-    });
-  }
-};
+  res.status(200).json({
+    status: "success",
+    data: {
+      quote,
+    },
+  });
+});
 
-exports.deleteQuote = async (req, res) => {
-  try {
-    const doc = await Quote.findByIdAndDelete(req.params.id);
+exports.deleteQuote = catchAsync(async (req, res, next) => {
+  const doc = await Quote.findByIdAndDelete(req.params.id);
 
-    if (!doc) throw new Error("Please, provide a valid ID");
+  if (!doc) return next(new AppError("Please, provide a valid ID", 404));
 
-    res.status(204).json({
-      status: "success",
-      data: null,
-    });
-  } catch (err) {
-    res.status(404).json({
-      status: "fail",
-      message: err.message,
-    });
-  }
-};
+  res.status(204).json({
+    status: "success",
+    data: null,
+  });
+});
