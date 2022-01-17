@@ -25,17 +25,10 @@ app.use((req, res, next) => {
 
 app.use("/api/v1/technologies", techRoutes);
 app.use("/api/v1/wonders", wondersRoutes);
-app.use("/api/v1/great_works", greatWorksRoutes);
-app.use("/api/v1/all_quotes", allQuotesRoutes);
+app.use("/api/v1/great-works", greatWorksRoutes);
+app.use("/api/v1/all-quotes", allQuotesRoutes);
 
 app.all("*", (req, res, next) => {
-  // const err = new Error(`Can't find ${req.originalUrl} on this server!`);
-
-  // res.status(404).json({
-  //   status: "fail",
-  //   message: err.message,
-  // });
-
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 

@@ -51,17 +51,9 @@ exports.createGreatWorkQuote = catchAsync(async (req, res, next) => {
 });
 
 exports.updateGreatWorkQuote = catchAsync(async (req, res, next) => {
-  // 1) I have to check if the ID provided belongs to a technology quote
-  const greatWorkQuote = await GreatWork.findById(req.params.id, "category");
-
-  if (!greatWorkQuote || greatWorkQuote.category.type !== req.categoryType)
-    return next(
-      new AppError("Please, provide an ID of a great work quote.", 400)
-    );
-
-  // 2) If it is => update it and save it.
-  const quoteUpdated = await GreatWork.findByIdAndUpdate(
-    req.params.id,
+  // 1) I have to check if the ID provided belongs to a great work quote
+  const greatWorkQuote = await GreatWork.findOneAndUpdate(
+    { _id: req.params.id, "category.type": { $eq: req.categoryType } },
     req.body,
     {
       new: true,
@@ -69,23 +61,30 @@ exports.updateGreatWorkQuote = catchAsync(async (req, res, next) => {
     }
   );
 
+  // 2) If it is not => send error.
+  if (!greatWorkQuote)
+    return next(
+      new AppError("Please, provide an ID of a great work quote.", 400)
+    );
+
   res.status(200).json({
     status: "success",
     data: {
-      quote: quoteUpdated,
+      quote: greatWorkQuote,
     },
   });
 });
 
 exports.deleteGreatWorkQuote = catchAsync(async (req, res, next) => {
-  const quote = await GreatWork.findById(req.params.id, "category");
+  const quote = await GreatWork.findOneAndDelete({
+    _id: req.params.id,
+    "category.type": { $eq: req.categoryType },
+  });
 
-  if (!quote || quote.category.type !== req.categoryType)
+  if (!quote)
     return next(
       new AppError("Please, provide an ID of a great work quote.", 404)
     );
-
-  await GreatWork.findByIdAndDelete(req.params.id);
 
   res.status(204).json({
     status: "success",

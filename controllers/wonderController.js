@@ -51,37 +51,40 @@ exports.createWonderQuote = catchAsync(async (req, res, next) => {
 });
 
 exports.updateWonderQuote = catchAsync(async (req, res, next) => {
-  // 1) I have to check if the ID provided belongs to a technology quote
-  const wonderQuote = await Wonder.findById(req.params.id, "category");
+  // 1) I have to check if the ID provided belongs to a wonder quote
+  const wonderQuote = await Wonder.findOneAndUpdate(
+    { _id: req.params.id, "category.type": { $eq: req.categoryType } },
+    req.body,
+    {
+      new: true,
+      runValidators: true,
+    }
+  );
 
-  if (!wonderQuote || wonderQuote.category.type !== req.categoryType)
+  // 2) If it is not => send error.
+  if (!wonderQuote)
     return next(
       new AppError("Please, provide a valid ID of a wonder quote.", 400)
     );
 
-  // 2) If it is => update it and save it.
-  const quoteUpdated = await Wonder.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-    runValidators: true,
-  });
-
   res.status(200).json({
     status: "success",
     data: {
-      quote: quoteUpdated,
+      quote: wonderQuote,
     },
   });
 });
 
 exports.deleteWonderQuote = catchAsync(async (req, res, next) => {
-  const quote = await Wonder.findById(req.params.id, "category");
+  const quote = await Wonder.findOneAndDelete({
+    _id: req.params.id,
+    "category.type": { $eq: req.categoryType },
+  });
 
-  if (!quote || quote.category.type !== req.categoryType)
+  if (!quote)
     return next(
       new AppError("Please, provide a valid ID of a wonder quote.", 404)
     );
-
-  await Wonder.findByIdAndDelete(req.params.id);
 
   res.status(204).json({
     status: "success",

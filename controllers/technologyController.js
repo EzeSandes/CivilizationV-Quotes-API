@@ -49,36 +49,42 @@ exports.createTechQuote = catchAsync(async (req, res, next) => {
 
 exports.updateTechQuote = catchAsync(async (req, res, next) => {
   // 1) I have to check if the ID provided belongs to a technology quote
-  const techQuote = await Tech.findById(req.params.id, "category");
+  const techQuote = await Tech.findOneAndUpdate(
+    {
+      _id: req.params.id,
+      "category.type": { $eq: req.categoryType },
+    },
+    req.body,
+    {
+      new: true,
+      runValidators: true,
+    }
+  );
 
-  if (!techQuote || techQuote.category.type !== req.categoryType)
+  // 2) If it is not => send error.
+  if (!techQuote)
     return next(
       new AppError("Please, provide an ID of a technology quote.", 400)
     );
 
-  // 2) If it is => update it and save it.
-  const quoteUpdated = await Tech.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-    runValidators: true,
-  });
-
   res.status(200).json({
     status: "success",
     data: {
-      quote: quoteUpdated,
+      quote: techQuote,
     },
   });
 });
 
 exports.deleteTechQuote = catchAsync(async (req, res, next) => {
-  const quote = await Tech.findById(req.params.id, "category");
+  const quote = await Tech.findOneAndDelete({
+    _id: req.params.id,
+    "category.type": { $eq: req.categoryType },
+  });
 
-  if (!quote || quote.category.type !== req.categoryType)
+  if (!quote)
     return next(
       new AppError("Please, provide an ID of a technology quote.", 404)
     );
-
-  await Tech.findByIdAndDelete(req.params.id);
 
   res.status(204).json({
     status: "success",
