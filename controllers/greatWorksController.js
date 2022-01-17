@@ -1,6 +1,7 @@
 const GreatWork = require("../models/quoteModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.searchGreatWorksQuotes = (req, res, next) => {
   req.categoryType = "great work";
@@ -8,9 +9,12 @@ exports.searchGreatWorksQuotes = (req, res, next) => {
 };
 
 exports.getAllGreatWorksQuotes = catchAsync(async (req, res, next) => {
-  const greatWorksQuotes = await GreatWork.find({
-    "category.type": req.categoryType,
-  });
+  const features = new APIFeatures(GreatWork, req.query, req.categoryType)
+    .sort()
+    .limitFields()
+    .paginate();
+
+  const greatWorksQuotes = await features.query;
 
   res.status(200).json({
     status: "success",

@@ -1,6 +1,7 @@
 const Wonder = require("../models/quoteModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.searchWonderQuotes = (req, res, next) => {
   req.categoryType = "wonder";
@@ -8,9 +9,13 @@ exports.searchWonderQuotes = (req, res, next) => {
 };
 
 exports.getAllWonderQuotes = catchAsync(async (req, res, next) => {
-  const wondersQuotes = await Wonder.find({
-    "category.type": req.categoryType,
-  });
+  const features = new APIFeatures(Wonder, req.query, req.categoryType)
+    .sort()
+    .limitFields()
+    .paginate();
+
+  // Only here, Query is executed.
+  const wondersQuotes = await features.query;
 
   res.status(200).json({
     status: "success",

@@ -1,6 +1,7 @@
 const Tech = require("../models/quoteModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.searchTechQuotes = (req, res, next) => {
   req.categoryType = "technology";
@@ -8,7 +9,13 @@ exports.searchTechQuotes = (req, res, next) => {
 };
 
 exports.getAllTechQuotes = catchAsync(async (req, res, next) => {
-  const techQuotes = await Tech.find({ "category.type": req.categoryType });
+  const features = new APIFeatures(Tech, req.query, req.categoryType)
+    .sort()
+    .limitFields()
+    .paginate();
+
+  // Only here, Query is executed.
+  const techQuotes = await features.query;
 
   res.status(200).json({
     status: "success",

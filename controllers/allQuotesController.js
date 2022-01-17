@@ -1,9 +1,15 @@
 const Quote = require("../models/quoteModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
+const APIFeatures = require("../utils/apiFeatures");
 
 exports.getAllQuotes = catchAsync(async (req, res, next) => {
-  const allQuotes = await Quote.find();
+  const features = new APIFeatures(Quote, req.query, req.categoryType)
+    .sort()
+    .limitFields()
+    .paginate();
+
+  const allQuotes = await features.query;
 
   res.status(200).json({
     status: "success",
