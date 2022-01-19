@@ -1,0 +1,501 @@
+[
+  {
+    "quote": "Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.",
+    "author": "Daniel Webster",
+    "category": { "type": "technology", "name": "Agriculture" }
+  },
+  {
+    "quote": "Thou shalt not muzzle the ox when he treadeth out the corn.",
+    "author": "Bible Deuteronomy 25:4",
+    "category": { "type": "technology", "name": "Animal Husbandry" }
+  },
+  {
+    "quote": "The haft of the arrow had been feathered with one of the eagle's own plumes, we often give our enemies the means of our own destruction.",
+    "author": "Aesop",
+    "category": { "type": "technology", "name": "Archery" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.",
+    "author": "Homer",
+    "category": { "type": "technology", "name": "Bronze Working" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "So teach us to number our days, so that we may apply our hearts unto wisdom.",
+    "author": "Bible Psalms 90:12",
+    "category": { "type": "technology", "name": "Calendar" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "How happy are those whose walls already rise!",
+    "author": "Virgil",
+    "category": { "type": "technology", "name": "Masonry" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The meek shall inherit the Earth, but not its mineral rights",
+    "author": "J. Paul Getty",
+    "category": { "type": "technology", "name": "Mining" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Shall the clay say to him that fashioneth it, what makest thou?",
+    "author": "Bible Isaiah 45:9",
+    "category": { "type": "technology", "name": "Pottery" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "He who commands the sea has command of everything.",
+    "author": "Themistocles",
+    "category": { "type": "technology", "name": "Sailing" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Wisdom and virtue are like the two wheels of a cart.",
+    "author": "Japanese Proverb",
+    "category": { "type": "technology", "name": "The Wheel" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Even brute beasts and wandering birds do not fall into the same traps or nets twice.",
+    "author": "Saint Jerome",
+    "category": { "type": "technology", "name": "Trapping" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "He who destroys a good book kills reason itself.",
+    "author": "John Milton",
+    "category": { "type": "technology", "name": "Writing" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "hree things are to be looked to in a building: that it stand on the right spot; that it be securely founded; that it be successfully executed.",
+    "author": "Johann Wolfgang von Goethe",
+    "category": { "type": "technology", "name": "Construction" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Better is bread with a happy heart than wealth with vexation.",
+    "author": "Amenemope",
+    "category": { "type": "technology", "name": "Currency" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "What is drama but life with the dull bits cut out.",
+    "author": "Alfred Hitchcock",
+    "category": { "type": "technology", "name": "Drama and Poetry" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Instrumental or mechanical science is the noblest and, above all others, the most useful.",
+    "author": "Leonardo da Vinci",
+    "category": { "type": "technology", "name": "Engineering" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "A Horse! A Horse! My kingdom for a horse!",
+    "author": "Shakespeare (Richard III)",
+    "category": { "type": "technology", "name": "Horseback Riding" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Do not wait to strike til the iron is hot, but make it hot by striking.",
+    "author": "William Butler Yeats",
+    "category": { "type": "technology", "name": "Iron Working" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Mathematics is the gate and key to the sciences.",
+    "author": "Roger Bacon",
+    "category": { "type": "technology", "name": "Mathematics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "He made an instrument to know if the moon shine at full or no.",
+    "author": "Samuel Butler",
+    "category": { "type": "technology", "name": "Optics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "There is only one good, knowledge, and one evil, ignorance.",
+    "author": "Socrates",
+    "category": { "type": "technology", "name": "Philosophy" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.",
+    "author": "Malory",
+    "category": { "type": "technology", "name": "Chivalry" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The only thing that saves us from the bureaucracy is its inefficiency.",
+    "author": "Eugene McCarthy",
+    "category": { "type": "technology", "name": "Civil Service" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "I find the great thing in this world is not so much where we stand, as in what direction we are moving.",
+    "author": "Oliver Wendell Holmes",
+    "category": { "type": "technology", "name": "Compass" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Education is the best provision for old age.",
+    "author": "Aristotle",
+    "category": { "type": "technology", "name": "Education" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The merchants and the traders have come; their profits are pre-ordained...",
+    "author": "Sri Guru Granth Sahib",
+    "category": { "type": "technology", "name": "Guilds" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.",
+    "author": "Thomas Jefferson",
+    "category": { "type": "technology", "name": "Machinery" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "When pieces of bronze or gold or iron break, the metalsmith wields them together again on the fire, and the bond is established.",
+    "author": "",
+    "category": { "type": "technology", "name": "Sri Guru Granth Sahib" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Measure what is measurable, and make measurable what is not so.",
+    "author": "Galileo",
+    "category": { "type": "technology", "name": "Physics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "John Henry said to his Captain, \"A man ain't nothin' but a man, And before I'll let your steam drill beat me down, I'll die with the hammer in my hand.\"",
+    "author": "",
+    "category": {
+      "type": "technology",
+      "name": "Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
+    },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Three things are necessary for the salvation of man, to know what he ought to believe, to know what he ought to desire, and to know what he ought to do.",
+    "author": "St. Thomas Aquinas",
+    "category": { "type": "technology", "name": "Theology" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Their rising all at once was as the sound of thunder heard remote.",
+    "author": "Milton",
+    "category": { "type": "technology", "name": "Acoustics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.",
+    "author": "Homer",
+    "category": { "type": "technology", "name": "Astronomy" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Architecture begins where engineering ends.",
+    "author": "Walter Gropius",
+    "category": { "type": "technology", "name": "Architecture" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Happiness, a good bank account, a good cook, and a good digestion.",
+    "author": "Jean Jacques Rousseau",
+    "category": { "type": "technology", "name": "Banking" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.",
+    "author": "Calvin Coolidge",
+    "category": { "type": "technology", "name": "Chemistry" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Compound interest is the most powerful force in the universe.",
+    "author": "Albert Einstein",
+    "category": { "type": "technology", "name": "Economics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.",
+    "author": "Alfred Nobel",
+    "category": { "type": "technology", "name": "Gunpowder" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "There never was a good knife made of bad steel.",
+    "author": "Benjamin Franklin",
+    "category": { "type": "technology", "name": "Metallurgy" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The winds and the waves are always on the side of the ablest navigators.",
+    "author": "Edward Gibbon",
+    "category": { "type": "technology", "name": "Navigation" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "It is a newspaper's duty to print the news and raise hell.",
+    "author": "The Chicago Times",
+    "category": { "type": "technology", "name": "Printing Press" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Those who cannot remember the past are condemned to repeat it.",
+    "author": "George Santayana",
+    "category": { "type": "technology", "name": "Archaeology" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "If the brain were so simple we could understand it, we would be so simple we couldn't.",
+    "author": "Lyall Watson",
+    "category": { "type": "technology", "name": "Biology" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy",
+    "author": "Christopher Dawson",
+    "category": { "type": "technology", "name": "Dynamite" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "It is a fact-or I have dreamed it-that by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?",
+    "author": "Nathaniel Hawthorne",
+    "category": { "type": "technology", "name": "Electricity" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The nation that destroys its soil destroys itself.",
+    "author": "Franklin Delano Roosevelt",
+    "category": { "type": "technology", "name": "Fertilizer" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.",
+    "author": "Emily Greene Balch",
+    "category": { "type": "technology", "name": "Industrialization" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.",
+    "author": "George S. Patton",
+    "category": { "type": "technology", "name": "Military Science" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "It is well that war is so terrible, or we should grow too fond of it.",
+    "author": "Robert E. Lee",
+    "category": { "type": "technology", "name": "Rifling" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Every great advance in science has issued from a new audacity of imagination.",
+    "author": "John Dewey",
+    "category": { "type": "technology", "name": "Scientific Theory" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The nations of the West hope that by means of steam communication all the world will become as one family.",
+    "author": "Townsend Harris",
+    "category": { "type": "technology", "name": "Steam Power" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "I once sent a dozen of my friends a telegram saying \"flee at once-all is discovered!\" They all left town immediately.",
+    "author": "Mark Twain",
+    "category": { "type": "technology", "name": "Telegraph" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Men, like bullets, go farthest when they are smoothest.",
+    "author": "Jean Paul",
+    "category": { "type": "technology", "name": "Ballistics" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.",
+    "author": "Albert Einstein",
+    "category": { "type": "technology", "name": "Combustion" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.",
+    "author": "Trip Hawkins",
+    "category": { "type": "technology", "name": "Electronics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Aeronautics was neither an industry nor a science, it was a miracle.",
+    "author": "Igor Sikorsky",
+    "category": { "type": "technology", "name": "Flight" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The speed of communications is wondrous to behold, it is also true that speed does multiply the distribution of information that we know to be untrue.",
+    "author": "Edward R. Murrow",
+    "category": { "type": "technology", "name": "Mass Media" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Ben, I want to say one word to you, just one word: Plastics.",
+    "author": "Buck Henry and Calder Willingham, The Graduate",
+    "category": { "type": "technology", "name": "Plastics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The whole country was tied together by radio, we all experienced the same heroes and comedians and singers. They were giants.",
+    "author": "Woody Allen",
+    "category": { "type": "technology", "name": "Radio" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The introduction of so powerful an agent as steam to carriage on wheels will make a great change in the situation of man.",
+    "author": "Thomas Jefferson",
+    "category": { "type": "technology", "name": "Railroad" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.",
+    "author": "William Wordsworth",
+    "category": { "type": "technology", "name": "Refrigeration" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Nothing is particularly hard if you divide it into small jobs.",
+    "author": "Henry Ford",
+    "category": { "type": "technology", "name": "Replaceable Parts" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The unleashed power of the atom has changed everything save our mode of thinking, and we thus drift toward unparalleled catastrophe.",
+    "author": "Albert Einstein",
+    "category": { "type": "technology", "name": "Atomic Theory" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "he root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.",
+    "author": "Ludwig von Mises",
+    "category": { "type": "technology", "name": "Combined Arms" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Computers are like Old Testament gods: lots of rules and no mercy.",
+    "author": "Joseph Campbell",
+    "category": { "type": "technology", "name": "Computers" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.",
+    "author": "Rachel Carson",
+    "category": { "type": "technology", "name": "Ecology" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "I am become Death, the destroyer of worlds.",
+    "author": "J. Robert Oppenheimer",
+    "category": { "type": "technology", "name": "Nuclear Fission" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "In nothing do men more nearly approach the gods than in giving health to men.",
+    "author": "Cicero",
+    "category": { "type": "technology", "name": "Penicillin" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Vision is the art of seeing things invisible.",
+    "author": "Jonathan Swift",
+    "category": { "type": "technology", "name": "Radar" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "A good rule for rocket experiments to follow is this: always assume that it will explode.",
+    "author": "Astronautics Magazine 1937",
+    "category": { "type": "technology", "name": "Rocketry" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.",
+    "author": "Martin Luther King Jr.",
+    "category": { "type": "technology", "name": "Advanced Ballistics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "I think we agree, the past is over.",
+    "author": "George W. Bush",
+    "category": { "type": "technology", "name": "Future Tech" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The new electronic interdependence recreates the world in the image of a global village.",
+    "author": "Marshall McLuhan",
+    "category": { "type": "technology", "name": "Globalization" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The night is far spent; the day is at hand. Let us therefore cast off the works of darkness, and let us put on the armor of light.",
+    "author": "Bible, Romans 13:12",
+    "category": { "type": "technology", "name": "Lasers" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.",
+    "author": "Sun Tzu",
+    "category": { "type": "technology", "name": "Mobile Tactics" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.",
+    "author": "Richard Schwartz",
+    "category": { "type": "technology", "name": "Nanotechnology" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.",
+    "author": "Albert Einstein",
+    "category": { "type": "technology", "name": "Nuclear Fusion" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.",
+    "author": "Isaac Newton",
+    "category": { "type": "technology", "name": "Particle Physics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "1. A robot may not injure a human being, or through inaction, allow a human being to come to harm.\n2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the first law.\n3. A robot must protect its own existence as long as such protection does not conflict with the first or second law.",
+    "author": "Isaac Asimov",
+    "category": { "type": "technology", "name": "Robotics" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Now, somehow, in some way, the sky seemed almost alien.",
+    "author": "Lyndon B. Johnson",
+    "category": { "type": "technology", "name": "Satellites" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.",
+    "author": "Sun Tzu",
+    "category": { "type": "technology", "name": "Stealth" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The more we elaborate our means of communication, the less we communicate.",
+    "author": "J.B. Priestly",
+    "category": { "type": "technology", "name": "Telecommunications" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "The Internet is the first thing that humanity has built that humanity doesn't understand, the largest experiment in anarchy that we have ever had.",
+    "author": "Eric Schmidt",
+    "category": { "type": "technology", "name": "The Internet" },
+    "expansionAdded": "Brave New World"
+  }
+]

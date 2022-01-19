@@ -1,0 +1,290 @@
+[
+  {
+    "quote": "Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.",
+    "author": "Sir Francis Bacon",
+    "category": { "type": "wonder", "name": "Great Library" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.",
+    "author": "Pericles",
+    "category": { "type": "wonder", "name": "Mausoleum of Halicarnassus" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.",
+    "author": "The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge",
+    "category": { "type": "wonder", "name": "Pyramids" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken.",
+    "author": "The Iliad",
+    "category": { "type": "wonder", "name": "Statue of Zeus" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Time crumbles things; everything grows old and is forgotten under the power of time",
+    "author": "Aristotle",
+    "category": { "type": "wonder", "name": "Stonehenge" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of the air, that emanation from the old trees, that so wonderfully changes and renews a weary spirit.",
+    "author": "Robert Louis Stevenson",
+    "category": { "type": "wonder", "name": "Temple of Artemis" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.",
+    "author": "William Shakespeare, Julius Caesar",
+    "category": { "type": "wonder", "name": "Colossus" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.",
+    "author": "The Bible, Psalms 107:23-24",
+    "category": { "type": "wonder", "name": "Great Lighthouse" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.",
+    "author": "Sun Tzu",
+    "category": { "type": "wonder", "name": "Great Wall" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.",
+    "author": "F. Frankfort Moore",
+    "category": { "type": "wonder", "name": "Hanging Gardens" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing",
+    "author": "Socrates",
+    "category": { "type": "wonder", "name": "Oracle" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Earth proudly wears the Parthenon as the best gem upon her zone.",
+    "author": "Ralph Waldo Emerson",
+    "category": { "type": "wonder", "name": "Parthenon" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "...who drinks the water I shall give him, says the Lord, will have a spring inside him welling up for eternal life. Let them bring me to your holy mountain in the place where you dwell. Across the desert and through the mountain to the Canyon of the Crescent Moon...",
+    "author": "Indiana Jones",
+    "category": { "type": "wonder", "name": "Petra" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.",
+    "author": "Sun Tzu",
+    "category": { "type": "wonder", "name": "Terracotta Army" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.",
+    "author": "Joseph Addison",
+    "category": { "type": "wonder", "name": "Alhambra" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.",
+    "author": "Antonio da Magdalena",
+    "category": { "type": "wonder", "name": " Angkor Wat" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "When you realize how perfect everything is, you will tilt your head back and laugh at the sky.",
+    "author": "Gautama Buddha",
+    "category": { "type": "wonder", "name": "Borobudur" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.",
+    "author": "The Books of Chilam Balam",
+    "category": { "type": "wonder", "name": "Chichen Itza" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "With the magnificence of eternity before us, let time, with all its fluctuations, dwindle into its own littleness.",
+    "author": "Thomas Chalmers",
+    "category": { "type": "wonder", "name": "Great Mosque of Djenne" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty.",
+    "author": "Procopius, De Aedificis",
+    "category": { "type": "wonder", "name": "Hagia Sophia" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.",
+    "author": "Hiram Bingham",
+    "category": { "type": "wonder", "name": "Machu Picchu" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Architecture has recorded the great ideas of the human race. Not only every religious symbol, but every human thought has its page in that vast book",
+    "author": "Victor Hugo",
+    "category": { "type": "wonder", "name": "Notre Dame" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Most of us can, as we choose, make of this world either a palace or a prison.",
+    "author": "John Lubbock",
+    "category": { "type": "wonder", "name": "Forbidden Palace" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Totus mundus agit histrionem.",
+    "author": "Inscription above main entrance to the Globe Theatre",
+    "category": { "type": "wonder", "name": "Globe Theatre" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.",
+    "author": "Yamamoto Tsunetomo",
+    "category": { "type": "wonder", "name": "Himeji Castle" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Don't clap too hard - it's a very old building.",
+    "author": "John Osbourne",
+    "category": { "type": "wonder", "name": "Leaning Tower of Pisa" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.",
+    "author": "James Russell Lowell",
+    "category": { "type": "wonder", "name": "Porcelain Tower" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "When we build, let us think that we build forever.",
+    "author": "John Ruskin",
+    "category": { "type": "wonder", "name": "Red Fort" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "I live and love in God's peculiar light.",
+    "author": "Michelangelo Buonarroti",
+    "category": { "type": "wonder", "name": "Sistine Chapel" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.",
+    "author": "Rabindranath Tagore",
+    "category": { "type": "wonder", "name": "Taj Mahal" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The painter is not simply someone who looks and who sees. Above all, the artist is someone who exposes a personal vision by rendering it visible.",
+    "author": "Marcel Paquet",
+    "category": { "type": "wonder", "name": "Uffizi" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "To achieve great things, two things are needed: a plan, and not quite enough time.",
+    "author": "Leonard Bernstein",
+    "category": { "type": "wonder", "name": "Big Ben" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Pale Death beats equally at the poor man's gate and at the palaces of kings.",
+    "author": "Horace",
+    "category": { "type": "wonder", "name": "Brandenburg Gate" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Every genuine work of art has as much reason for being as the earth and the sun.",
+    "author": "Ralph Waldo Emerson",
+    "category": { "type": "wonder", "name": "Louvre" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Broadway is a main artery of New York cultural life - the hardened artery.",
+    "author": "Walter Winchell",
+    "category": { "type": "wonder", "name": "Broadway" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "We live only to discover beauty, all else is a form of waiting",
+    "author": "Kahlil Gibran",
+    "category": { "type": "wonder", "name": "Eiffel Tower" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "The Law is a fortress on a hill that armies cannot take or floods wash away.",
+    "author": "The Prophet Muhammed",
+    "category": { "type": "wonder", "name": "Kremlin" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.",
+    "author": "King Ludwig II of Bavaria",
+    "category": { "type": "wonder", "name": "Neuschwanstein" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "his loss (of freedom) means the fading from human life of values infinitely precious to it. There only remain ironbound conditions of employment and trivial amusements for leisure.",
+    "author": "A.N. Whitehead",
+    "category": { "type": "wonder", "name": "Prora" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!",
+    "author": "Emma Lazarus",
+    "category": { "type": "wonder", "name": "Statue of Liberty" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Come to me, all who labor and are heavy burdened, and I will give you rest.",
+    "author": "The Bible, Matthew 11:28",
+    "category": { "type": "wonder", "name": "Cristo Redentor" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Distrust and caution are the parents of security.",
+    "author": "Benjamin Franklin",
+    "category": { "type": "wonder", "name": "Great Firewall" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "In preparing for battle I have always found that plans are useless, but planning is indispensable.",
+    "author": "Dwight D. Eisenhower",
+    "category": { "type": "wonder", "name": "Pentagon" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Those who lose dreaming are lost",
+    "author": "Australian Aboriginal saying",
+    "category": { "type": "wonder", "name": "Sydney Opera House" },
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quote": "Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules.",
+    "author": "Douglas Adams",
+    "category": { "type": "wonder", "name": "CN Tower" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "The wonder is, not that the field of stars is so vast, but that man has measured it.",
+    "author": "Anatole France",
+    "category": { "type": "wonder", "name": "Hubble Space Telescope" },
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quote": "Building one Space Station for everyone was and is insane; we should have built a dozen.",
+    "author": "Larry Niven",
+    "category": { "type": "wonder", "name": "International Space Station" },
+    "expansionAdded": "Brave New World"
+  },
+  {
+    "quote": "More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that is why we have the United Nations.",
+    "author": "",
+    "category": { "type": "wonder", "name": "Kofi Annan" },
+    "expansionAdded": "Vanilla"
+  }
+]

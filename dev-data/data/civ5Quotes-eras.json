@@ -1,0 +1,142 @@
+[
+  {
+    "quotes": [
+      {
+        "quote": "Proud is the spirit of Zeus-fostered kings -- their honor comes from Zeus, and Zeus, god of council, loves them.",
+        "author": "Homer"
+      },
+      {
+        "quote": "He who knows others is wise; He who know himself is enlightened.",
+        "author": "Lao Tzu"
+      },
+      {
+        "quote": "The king's might is greater than human, and his arm is very long.",
+        "author": "Herodotus"
+      }
+    ],
+    "era": "Classical",
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "An emperor is subject to no one but God and justice.",
+        "author": "Fredrick I, Barbarossa"
+      },
+      {
+        "quote": "This life of man appears for a short space, but of what went before of what is to follow we are utterly ignorant.",
+        "author": "Venerable Bede"
+      },
+      {
+        "quote": "The voice of the people is the voice of God.",
+        "author": "Alcuin"
+      }
+    ],
+    "era": "Medieval",
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "Whoever desires to found a state and give it laws, must start with assuming that all men are bad and ever ready to display their vicious nature, whenever they may find occasion for it.",
+        "author": "Niccolo Machiavelli"
+      },
+      {
+        "quote": "In the country of the blind, the one-eyed man is king.",
+        "author": "Desiderius Erasmus"
+      },
+      {
+        "quote": "Do you not know, my son, with what little understanding the world is ruled?",
+        "author": "Pope Julius III"
+      }
+    ],
+    "era": "Renaissance",
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "We admit of no government by divine right. The only legitimate right to govern is an express grant of power from the governed.",
+        "author": "William Henry Harrison"
+      },
+      {
+        "quote": "If you pick up a starving dog and make him prosperous, he will not bite you. This is the principal difference between a dog and a man.",
+        "author": "Mark Twain"
+      },
+      {
+        "quote": "The day of small nations has long passed away. The day of empires has come.",
+        "author": "Joseph Chamberlain"
+      }
+    ],
+    "era": "Industrial",
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "The only thing we have to fear is fear itself.",
+        "author": "Franklin Delano Roosevelt"
+      },
+      {
+        "quote": "A single death is a tragedy. A million deaths is a statistic.",
+        "author": "Josef Stalin"
+      },
+      {
+        "quote": "Mr. Gorbachev, tear down this wall!",
+        "author": "Ronald Reagan"
+      }
+    ],
+    "era": "Modern",
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "For tomorrow belongs to the people who prepare for it today.",
+        "author": "African proverb"
+      },
+      {
+        "quote": "The future is not what it used to be.",
+        "author": "Yogi Berra"
+      },
+      {
+        "quote": "I never think about the future - it comes soon enough.",
+        "author": "Albert Einstein"
+      }
+    ],
+    "era": "Future",
+    "expansionAdded": "Vanilla"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "The future has a way of arriving unannounced.",
+        "author": "George Will"
+      },
+      {
+        "quote": "Most of the things worth doing in the world had been declared impossible before they were done.",
+        "author": "Louis Brandeis"
+      },
+      {
+        "quote": "This is one small step for a man, one giant leap for mankind.",
+        "author": "Neil Armstrong"
+      },
+      {
+        "quote": "Progress is the realization of utopias.",
+        "author": "Oscar Wilde"
+      }
+    ],
+    "era": "Atomic",
+    "expansionAdded": "Gods&Kings"
+  },
+  {
+    "quotes": [
+      {
+        "quote": "I never think about the future. It comes soon enough.",
+        "author": "Albert Einstein"
+      }
+    ],
+    "era": "Information",
+    "expansionAdded": "Gods&Kings"
+  }
+]

@@ -20,7 +20,7 @@ mongoose
 
 /*
 const quoteEraSchema = mongoose.Schema({
-  quote: [
+  quotes: [
     {
       quote: {
         type: String,
@@ -56,7 +56,6 @@ const quoteEraSchema = mongoose.Schema({
   },
 });
 */
-
 /*********************************  SERVER ******************************** */
 /************************************************************************** */
 
