@@ -7,12 +7,67 @@ const greatWorksRoutes = require("./routes/greatWorksRoutes");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 
+const rateLimit = require("express-rate-limit");
+const helmet = require("helmet");
+const mongoSanitize = require("express-mongo-sanitize");
+const hpp = require("hpp");
+
 const app = express();
 
-/*********************************  ***************************** */
+/********************************* SECURITY MIDDLEWARE ***************************** */
 /************************************************************************** */
 
-/********************************* MIDDLEWARES ***************************** */
+app.use(helmet());
+
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'", "data:", "blob:"],
+      baseUri: ["'self'"],
+      fontSrc: ["'self'", "https:", "data:"],
+      scriptSrc: ["'self'", "https://*.cloudflare.com"],
+      scriptSrc: ["'self'", "https://*.stripe.com"],
+      scriptSrc: ["'self'", "http:", "https://*.mapbox.com", "data:"],
+      frameSrc: ["'self'", "https://*.stripe.com"],
+      objectSrc: ["'none'"],
+      styleSrc: ["'self'", "https:", "unsafe-inline"],
+      workerSrc: ["'self'", "data:", "blob:"],
+      childSrc: ["'self'", "blob:"],
+      imgSrc: ["'self'", "data:", "blob:"],
+      connectSrc: ["'self'", "blob:", "https://*.mapbox.com"],
+      upgradeInsecureRequests: [],
+    },
+  })
+);
+
+const limiter = rateLimit({
+  max: 100, // Req x IP
+  windowMs: 60 * 60 * 1000, // in 1hs
+  message: "Too many requests for this IP, try again in an hour.",
+});
+
+// With all routes started with '/api'
+app.use("/api", limiter);
+
+///////// Data sanitization against NoSQL query injection
+app.use(mongoSanitize());
+// Data sanitization against XSS
+app.use(xss());
+
+//////// Prevent parameter pollution
+app.use(
+  hpp({
+    whitelist: [
+      "duration",
+      "ratingsAverage",
+      "ratingsQuantity",
+      "maxGroupSize",
+      "difficulty",
+      "price",
+    ],
+  })
+);
+/********************************* MIDDLEWARES (API-App) ***************************** */
 /************************************************************************** */
 app.use(express.json());
 
