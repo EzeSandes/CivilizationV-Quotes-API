@@ -6,7 +6,7 @@ class APIFeatures {
    * @param {String} categoryType - Type of the category that define the model - Ex: 'technology', 'great work', 'wonder'
    * @constructor
    */
-  constructor(model, queryObj, categoryType) {
+  constructor(model, queryObj, categoryType = null) {
     this.model = model;
 
     // FILTER: sort, page, fields, limit.
@@ -19,8 +19,9 @@ class APIFeatures {
       ...this.queryObj
     } = queryObj);
 
-    Object.assign(this.queryObj, { "category.type": categoryType });
-    console.log("this.queryObj = ", this.queryObj);
+    if (categoryType)
+      Object.assign(this.queryObj, { "category.type": categoryType });
+
     this.query = this.model.find(this.queryObj); // Model.find(...) without "await" isn't executed
 
     return this;
@@ -46,7 +47,7 @@ class APIFeatures {
 
   paginate() {
     const pageNum = Number(this.page) || 1;
-    const limitNum = Number(this.limit) || 100;
+    const limitNum = Number(this.limit) || 200;
     const skip = (pageNum - 1) * this.limit;
 
     this.query = this.query.skip(skip).limit(limitNum);

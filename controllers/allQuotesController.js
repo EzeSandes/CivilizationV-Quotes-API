@@ -4,7 +4,7 @@ const AppError = require("../utils/appError");
 const APIFeatures = require("../utils/apiFeatures");
 
 exports.getAllQuotes = catchAsync(async (req, res, next) => {
-  const features = new APIFeatures(Quote, req.query, req.categoryType)
+  const features = new APIFeatures(Quote, req.query)
     .sort()
     .limitFields()
     .paginate();

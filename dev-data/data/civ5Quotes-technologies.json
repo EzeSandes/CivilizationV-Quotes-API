@@ -161,8 +161,8 @@
   },
   {
     "quote": "When pieces of bronze or gold or iron break, the metalsmith wields them together again on the fire, and the bond is established.",
-    "author": "",
-    "category": { "type": "technology", "name": "Sri Guru Granth Sahib" },
+    "author": "Sri Guru Granth Sahib",
+    "category": { "type": "technology", "name": "Metal Casting" },
     "expansionAdded": "Vanilla"
   },
   {
@@ -173,10 +173,10 @@
   },
   {
     "quote": "John Henry said to his Captain, \"A man ain't nothin' but a man, And before I'll let your steam drill beat me down, I'll die with the hammer in my hand.\"",
-    "author": "",
+    "author": "Anonymous: The Ballad of John Henry, the Steel-Drivin' Man",
     "category": {
       "type": "technology",
-      "name": "Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
+      "name": "Steal"
     },
     "expansionAdded": "Vanilla"
   },

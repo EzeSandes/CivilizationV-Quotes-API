@@ -58,8 +58,8 @@ exports.updateTechQuote = catchAsync(async (req, res, next) => {
   // 1) I have to check if the ID provided belongs to a technology quote
   const techQuote = await Tech.findOneAndUpdate(
     {
-      _id: req.params.id,
-      "category.type": { $eq: req.categoryType },
+      _id: req.params.id, // Search with _id == req.params.id
+      "category.type": { $eq: req.categoryType }, // AND category.type == 'technology'
     },
     req.body,
     {

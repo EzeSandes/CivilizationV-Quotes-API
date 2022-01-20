@@ -32,18 +32,6 @@ const quoteSchema = mongoose.Schema({
   },
 });
 
-/////// QUERY MEDDLEWARE
-
-quoteSchema.pre(/^find/, function (next) {
-  this.start = Date.now();
-  next();
-});
-
-quoteSchema.post(/^find/, function (doc, next) {
-  console.log(`Query took: ${Date.now() - this.start} milliseconds`);
-  next();
-});
-
 ///////
 
 const Quote = mongoose.model("Quote", quoteSchema);

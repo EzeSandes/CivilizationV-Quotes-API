@@ -12,50 +12,12 @@ const DB = process.env.DATABASE.replace(
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
-    useCreateIndex: true, // ---> NO SOPORTADAS EN 6.0
-    useFindAndModify: false, //---> NO SOPORTADAS EN 6.0
+    useCreateIndex: true, // ---> NOT SUPPORTED IN 6.0
+    useFindAndModify: false, //---> NOT SUPPORTED IN 6.0
     useUnifiedTopology: true,
   })
   .then(() => console.log("DB conection successful!"));
 
-/*
-const quoteEraSchema = mongoose.Schema({
-  quotes: [
-    {
-      quote: {
-        type: String,
-        required: [true, "A quote must have a quote"],
-      },
-      author: {
-        type: String,
-        required: [true, "A quote must have an author"],
-      },
-    },
-  ],
-  era: {
-    type: String,
-    enum: [
-      "Ancient",
-      "Classical",
-      "Medieval",
-      "Renaissance",
-      "Industrial",
-      "Modern",
-      "Future",
-      "Atomic",
-      "Information",
-    ],
-  },
-  expansionAdded: {
-    type: String,
-    enum: {
-      values: ["Vanilla", "Gods&Kings", "Brave New World"],
-      message: "Expansion only can be: Vanilla, Gods&Kings, Brave New World",
-    },
-    default: "Vanilla",
-  },
-});
-*/
 /*********************************  SERVER ******************************** */
 /************************************************************************** */
 
