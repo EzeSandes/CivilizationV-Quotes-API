@@ -7,6 +7,7 @@ const greatWorksRoutes = require("./routes/greatWorksRoutes");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 
+const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
@@ -15,8 +16,15 @@ const xss = require("xss-clean");
 
 const app = express();
 
+/********************************* CORS ***************************** */
+/************************************************************************** */
+
+app.use(cors());
+
 /********************************* SECURITY MIDDLEWARE ***************************** */
 /************************************************************************** */
+
+app.enable("trust proxy");
 
 app.use(helmet());
 

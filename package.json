@@ -10,6 +10,7 @@
   "author": "José Ezequiel Sandes",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "express-mongo-sanitize": "^2.2.0",
@@ -23,6 +24,6 @@
     "nodemon": "^2.0.15"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^14"
   }
 }
