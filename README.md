@@ -25,8 +25,9 @@ Please be free to comment or add any new feature. I thank you a lot if you help 
 ## URL
 
 ```HTML
-https://civ5quotes.herokuapp.com/api/v1
+https://civilizationv-quotes-api.up.railway.app/api/v1/<queries>
 ```
+Note: See below for more details for "queries"
 
 ## Model
 
