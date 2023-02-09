@@ -1,10 +1,10 @@
 # Sid Meier's Civilization V - Quotes API
 
-A REST API for quotes of Sid Meier’s Civilization V game.
+A REST API for quotes from Sid Meier’s Civilization V game.
 
-I originally build this as a project to practice with MongoDB and NodeJS. I hope you will like it!
+I initially built this as a project to practice with MongoDB and NodeJS. I hope you will like it!
 
-Please be free to comment or add any new feature. I thank you a lot if you help me to complete the database with the Great Works Quotes. Thanks for your time!
+Please be free to comment or add any new feature. I'd thank you lot if you helped me to complete the database with the Great Works Quotes. Thanks for your time!
 
 **Main Technologies implemented**
 
